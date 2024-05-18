@@ -64,14 +64,35 @@ function AddSr(name) {
     } else {
         return "digite um número válido"
     }
-    
 }
 console.log(AddSr("Noel"))
 
-// Te dá retorno se vc está aprovado ou não de acordo com a média
 
+// Te dá retorno se vc está aprovado ou não de acordo com a média
+function Aprovacao(nota) {
+        return ((typeof(nota) === 'number') && (nota > 7 ? "Aprovado" : "Reprovado"))
+    }
+console.log(Aprovacao(4))
+
+
+// Te dá retorno se vc está aprovado ou não de acordo com a média
 function Aprovacao(media) {
     return media > 6 ? "Aprovado" : "Reprovado"
 }
 
 console.log(Aprovacao(8))
+
+
+
+// Te dá retorno se vc está aprovado ou não de acordo com a média
+function ValidaNota(nota) {
+
+    if (nota > 7) {
+        return "Aprovado"
+    } else if (nota >= 5 && nota <= 6) {
+        return "Recuperação"
+    } else {
+        return "Reprovado"
+    }
+}
+console.log(ValidaNota(3))
