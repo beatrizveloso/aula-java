@@ -95,4 +95,4 @@ function ValidaNota(nota) {
         return "Reprovado"
     }
 }
-console.log(ValidaNota(3))
+console.log(ValidaNota(3)) // toda função começa com letra maiúscula

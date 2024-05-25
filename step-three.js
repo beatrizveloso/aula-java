@@ -64,9 +64,21 @@ const findUser = users.find(user => user.name === "Bibs")
 console.log(filterUser) // trás o primeiro elemento que ele achar chamado "Bibs" 
 console.log(users[1])
 
-
-
+// retorna o primeiro nome e o último
 const namer = "Albus Percival Wulfric Brian Dumbledore"
 
-console.log(namer.slice(0, 6))
-console.log(namer.slice(29, 39))
+const arrayName = namer.split(" ")
+
+console.log(arrayName)
+
+const firstName = arrayName[0]
+
+const sobreName = arrayName[arrayName.length -1]
+
+console.log(firstName, sobreName)
+
+const dubleNumbers = numbers.map((num) => {
+    return num * 2
+})
+
+console.log(dubleNumbers)
